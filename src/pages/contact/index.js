@@ -39,15 +39,14 @@ export default class Index extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1>Contact</h1>
-              <form
-                name="contact"
-                method="post"
-                action="/contact/thanks/"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                onSubmit={this.handleSubmit}
-              >
+              <h1>Contato</h1>
+              <h4>
+                Telefone / Whatsapp: (62)981933699 <br />
+                E-mail: contato@florescereducacao.com.br
+              </h4>
+
+              <form action="https://getform.io/f/f3971b30-ab0e-4870-9e4d-710176ae6cbc" method="POST">
+
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 <input type="hidden" name="form-name" value="contact" />
                 <div hidden>
@@ -58,14 +57,13 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'name'}>
-                    Your name
+                    Seu Nome
                   </label>
                   <div className="control">
                     <input
                       className="input"
                       type={'text'}
                       name={'name'}
-                      onChange={this.handleChange}
                       id={'name'}
                       required={true}
                     />
@@ -88,7 +86,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'message'}>
-                    Message
+                    Mensagem
                   </label>
                   <div className="control">
                     <textarea
@@ -102,7 +100,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <button className="button is-link" type="submit">
-                    Send
+                    Enviar
                   </button>
                 </div>
               </form>

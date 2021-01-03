@@ -80,9 +80,9 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item-custom" style={{ color: 'white' }} to="/contact">
                 Contato
               </Link>
-              <Link className="navbar-item-custom" style={{ color: 'white' }} to="/contact/examples">
+              {/* <Link className="navbar-item-custom" style={{ color: 'white' }} to="/contact/examples">
                 Form Examples
-              </Link>
+              </Link> */}
             </div>
             <div className="navbar-end has-text-centered">
               <a
